@@ -1,0 +1,50 @@
+---
+title: Tope de Descuento
+layout: default
+js: true
+---
+
+<div>
+    <form id="tope-de-descuento">
+        <div class="form-row align-items-end">
+            <div class="col-lg-3">
+                <div class="form-group">
+                    <label for="percentage">Porcentaje de Descuento</label>
+                    <div class="input-group">
+                        <input id="percentage" name="percentage" type="text" class="form-control" autocomplete="off">
+                        <div class="input-group-append">
+                            <span class="input-group-text">%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="form-group">
+                    <label for="limit">Tope de Descuento</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input id="limit" name="limit" type="text" class="form-control" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="form-group">
+                    <label for="total">Compra Óptima</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input id="total" name="total" type="text" class="form-control" readonly>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="form-group">
+                    <button name="submit" type="submit" class="btn btn-block btn-primary">Calcular</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

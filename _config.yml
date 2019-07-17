@@ -1,1 +1,5 @@
 title: Calculadoras
+collections:
+  calculators:
+    permalink: /calculadoras/:name
+    output: true
