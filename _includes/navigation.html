@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="{{ site.url | absolute_url  }}">{{ site.title }}</a>
+    <a class="navbar-brand" href="{{ site.baseurl  }}">{{ site.title }}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -7,7 +7,7 @@
     <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item {% if page.url == '/' %}active{% endif %}">
-                <a class="nav-link" href="{{ site.url | absolute_url  }}">Inicio</a>
+                <a class="nav-link" href="{{ site.baseurl  }}">Inicio</a>
             </li>
             {% for item in site.calculators %}
             <li class="nav-item {% if page.url == item.url %}active{% endif %}">
