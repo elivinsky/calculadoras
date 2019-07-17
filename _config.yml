@@ -1,5 +1,5 @@
 title: Calculadoras
 collections:
   calculators:
-    permalink: /calculadoras/:name
+    permalink: /:name
     output: true
