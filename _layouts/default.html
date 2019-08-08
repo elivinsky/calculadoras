@@ -26,11 +26,12 @@
         {% assign file = "assets/css/" | append: slug | append: ".css" %}
         <link rel="stylesheet" href="{{ file | link | relative_url }}?t={{ site.time | date: '%s' }}">
         {% endif %}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css">
     </head>
     <body>
         {% include navigation.html %}
 
-        <main role="main" class="container">
+        <main role="main" class="container markdown-body">
             {{ content }}
         </main>
 
