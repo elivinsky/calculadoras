@@ -1,0 +1,56 @@
+---
+title: Tasa de Interés
+layout: default
+js: true
+---
+
+<div>
+    <form id="tasa-de-interes">
+        <div class="form-row align-items-end">
+            <div class="col-lg">
+                <div class="form-group">
+                    <label for="monto">Capital Inicial</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input id="monto" name="monto" type="text" class="form-control" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="form-group">
+                    <label for="tna">TNA (Tasa Nominal Anual)</label>
+                    <div class="input-group">
+                        <input id="tna" name="tna" type="text" class="form-control" autocomplete="off">
+                        <div class="input-group-append">
+                            <span class="input-group-text">%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="form-group">
+                    <label for="dias">Duración</label>
+                    <div class="input-group">
+                        <input id="dias" name="dias" type="text" class="form-control" autocomplete="off">
+                        <div class="input-group-append">
+                            <span class="input-group-text">días</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="form-group">
+                    <label for="result">Capital Final</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input id="result" name="result" type="text" class="form-control" readonly>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

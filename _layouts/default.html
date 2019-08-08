@@ -22,7 +22,7 @@
         {% assign file = "assets/css/main.css" | link %}
         <link rel="stylesheet" href="{{ file | relative_url }}?t={{ site.time | date: '%s' }}">
         {% if page.css %}
-        {% assign slug = page.title | slugify %}
+        {% assign slug = page.title | slugify: "latin" %}
         {% assign file = "assets/css/" | append: slug | append: ".css" %}
         <link rel="stylesheet" href="{{ file | link | relative_url }}?t={{ site.time | date: '%s' }}">
         {% endif %}
@@ -35,7 +35,7 @@
         </main>
 
         {% if page.js %}
-        {% assign slug = page.title | slugify %}
+        {% assign slug = page.title | slugify: "latin" %}
         {% assign file = "assets/js/" | append: slug | append: ".js" %}
         <script src="{{ file | link | relative_url }}?t={{ site.time | date: '%s' }}"></script>
         {% endif %}

@@ -22,10 +22,9 @@ form.addEventListener('submit', (event) => {
   calculate();
 });
 
-inputPercentage.addEventListener('keyup', (event) => {
-  calculate();
-});
-
-inputLimit.addEventListener('keyup', (event) => {
-  calculate();
+const inputs = form.querySelectorAll('input');
+[].forEach.call(inputs, (input) => {
+  input.addEventListener('keyup', () => {
+    calculate();
+  });
 });
