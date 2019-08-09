@@ -1,5 +1,5 @@
 ---
-name: Reporte de Errores
+name: Reporte de error
 about: Contanos el problema para poder mejorar
 title: "[ERROR]"
 labels: ''
