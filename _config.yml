@@ -3,3 +3,9 @@ collections:
   calculators:
     permalink: /:name
     output: true
+
+manifest_name: Calculadoras
+manifest_short_name: Calculadoras
+manifest_lang: es
+manifest_background_color: white
+manifest_display: standalone
