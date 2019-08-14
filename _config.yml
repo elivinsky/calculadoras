@@ -9,4 +9,4 @@ manifest_short_name: Calculadoras
 manifest_lang: es
 manifest_display: standalone
 manifest_background_color: white
-manifest_theme_color: #343A40
+manifest_theme_color: "#343A40"
