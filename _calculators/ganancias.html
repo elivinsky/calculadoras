@@ -1,0 +1,100 @@
+---
+title: Impuesto a las Ganancias
+layout: default
+order: 3
+js: true
+---
+
+<div>
+    <form id="ganancias">
+        <div class="form-row align-items-start">
+            <div class="col-lg">
+                <div class="form-group">
+                    <label for="gross">Sueldo Bruto</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input id="gross" name="gross" type="number" class="form-control" autocomplete="off" autofocus>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="form-group">
+                    <label for="children">Hijos</label>
+                    <input id="children" name="children" type="number" class="form-control" autocomplete="off">
+                    <small class="form-text text-muted">
+                        Hasta los 18 años
+                    </small>
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="form-group">
+                    <label for="rent">Alquiler</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input id="rent" name="rent" type="number" class="form-control" autocomplete="off">
+                    </div>
+                    <small class="form-text text-muted">
+                        Importe mensual
+                    </small>
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="form-group">
+                    <label for="mortgage">Crédito Hipotecario</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input id="mortgage" name="mortgage" type="number" class="form-control" autocomplete="off">
+                    </div>
+                    <small class="form-text text-muted">
+                        Cuota mensual
+                    </small>
+                </div>
+            </div>
+        </div>
+        <div class="form-row align-items-end">
+            <div class="col-lg">
+                <div class="form-group">
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="married" name="married">
+                        <label class="custom-control-label" for="married">Matrimonio</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="form-group">
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="retired" name="retired">
+                        <label class="custom-control-label" for="retired">Jubilación</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="form-group">
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="patagonia" name="patagonia">
+                        <label class="custom-control-label" for="patagonia">Patagonia</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-row align-items-end">
+            <div class="col-lg">
+                <div class="form-group">
+                    <label for="net">Sueldo Neto</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input id="net" name="net" type="number" class="form-control" readonly>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
