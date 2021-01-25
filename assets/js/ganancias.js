@@ -24,15 +24,15 @@ const calculate = () => {
   }
 
   const calculator = new calcGanancias({
-    topesEscalas: [33040, 66080, 99119, 132159, 198239, 264318, 396478, 528637, 99999999],
+    topesEscalas: [64532.64, 129065.29, 192567.93, 258130.58, 387195.86, 516261.14, 774391.71, 1032522.3, 99999999],
     porcentajesEscales: [0.05, 0.09, 0.12, 0.15, 0.19, 0.23, 0.27, 0.31, 0.35],
-    minimoNoImponible: 85848.99,
-    adicional4taCategoria: 412075.14,
-    coyuje: 80033.97,
-    hijo: 40361.43,
-    topeAportes: 16598.31,
-    topeJubilado: 670255.2,
-    topeAlquiler: 85848.99,
+    minimoNoImponible: 167668.4,
+    adicional4taCategoria: 804856.34,
+    coyuje: 156320.63,
+    hijo: 78833.08,
+    topeAportes: 208357.3,
+    topeJubilado: 1484752.88,
+    topeAlquiler: 157678,
     topeHipotecario: 20000,
     porcentajeAlquiler: 0.4,
     porcentajePatagonico: 1.22,
@@ -78,5 +78,5 @@ const inputs = form.querySelectorAll('input');
 
 const scriptTag = document.createElement('script');
 const firstScriptTag = document.getElementsByTagName('script')[0];
-scriptTag.src = 'https://cdn.jsdelivr.net/gh/juanmanuelromeraferrio/calc-impuesto-ganancias@0.1.5/dist/calc-ganancias.browserify.js';
+scriptTag.src = 'https://cdn.jsdelivr.net/gh/juanmanuelromeraferrio/calc-impuesto-ganancias@0.1.10/dist/calc-ganancias.browserify.js';
 firstScriptTag.parentNode.insertBefore(scriptTag, firstScriptTag);
