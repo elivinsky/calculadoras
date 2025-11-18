@@ -7,7 +7,7 @@ const PRICE_CATEGORIES = [
 ];
 
 const ELITE_STATUSES = [
-    {label: '-', bonus: 0, description: '0% bonus'},
+    {label: 'Ninguno', bonus: 0, description: '0% bonus'},
     {label: 'Red Plus', bonus: 0.10, description: '10% bonus'},
     {label: 'Silver', bonus: 0.20, description: '20% bonus'},
     {label: 'Gold', bonus: 0.60, description: '60% bonus'},
@@ -48,8 +48,8 @@ function calculateMiles() {
     const totalMiles = baseMiles + eliteBonusMiles;
 
     // 4. Calculate Qualifying Miles (QM)
-    // QM = Base Miles (QM) + floor(Elite Bonus Miles / 20)
-    const qualifyingMilesFromBonus = Math.floor(eliteBonusMiles / 20);
+    // QM = Base Miles (QM) + round(Elite Bonus Miles / 20)
+    const qualifyingMilesFromBonus = Math.round(eliteBonusMiles / 20);
     const qualifyingMiles = baseMiles + qualifyingMilesFromBonus;
 
     // --- Update UI ---
@@ -86,7 +86,7 @@ $(document).ready(function () {
         );
     });
     // Set default value
-    eliteStatusSelect.val(0);
+    eliteStatusSelect.val(3);
 
 
     // Attach event listeners for calculations
