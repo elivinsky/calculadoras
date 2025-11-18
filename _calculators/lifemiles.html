@@ -1,0 +1,80 @@
+---
+title: Lifemiles
+layout: default
+order: 3
+js: true
+---
+
+<div>
+    <form id="lifemiles">
+        <div class="form-row align-items-end">
+            <div class="col-lg">
+                <div class="form-group">
+                    <label for="basePrice">Precio base (USD)</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input
+                                id="basePrice"
+                                name="basePrice"
+                                type="number"
+                                class="form-control"
+                                autocomplete="off"
+                                autofocus
+                                inputmode="decimal"
+                                pattern="[0-9]+(?:\.[0-9]{1,2})?"
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="form-group">
+                    <label for="fareClass">Tarifa</label>
+                    <div class="input-group">
+                        <select id="fareClass" class="form-control custom-select"></select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="form-group">
+                    <label for="eliteStatus">Estatus Elite</label>
+                    <div class="input-group">
+                        <select id="eliteStatus" class="form-control custom-select"></select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="form-group">
+                    <label for="totalMilesValue">LifeMiles Redimibles</label>
+                    <div class="input-group">
+                        <input
+                                id="totalMilesValue"
+                                name="totalMilesValue"
+                                type="number"
+                                class="form-control"
+                                readonly
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="form-group">
+                    <label for="qualifyingMilesValue">Millas Calificables</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input
+                                id="qualifyingMilesValue"
+                                name="qualifyingMilesValue"
+                                type="number"
+                                class="form-control"
+                                readonly
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
